@@ -1,0 +1,248 @@
+nome: leonel henrique dorregaray barra
+data: 20/05/24
+
+codigos do teste mesa da recuperação:
+
+
+public class JavaApplication74 {
+
+ //exercicio numero 1
+
+    public static void main(String[] args) {
+        
+        int[] vetor1 = {1, 2, 3, 4, 5};
+        int[] vetor2 = {1, 2, 3, 4, 5};
+        int tamanho = vetor1.length;
+        int[] vetorSoma = new int[tamanho];
+
+        for (int i = 0; i < tamanho; i++) {
+            vetorSoma[i] = vetor1[i] + vetor2[i];
+        }
+
+        System.out.println("A soma dos vetores é:");
+        for (int i = 0; i < vetorSoma.length; i++) {
+            System.out.print(vetorSoma[i]);
+            if (i < vetorSoma.length - 1) {
+                System.out.print(", ");
+            }
+        }
+    }
+
+}
+
+exercicio 2:
+
+
+package revisao.ex2;
+
+public class RevisaoEx2 {
+//exercicio numero 2
+    public static void main(String[] args) {
+      
+   int [] vetor = {10,5,20,15,8};
+        int maior = vetor[1];
+        
+        for (int i = 1; i < vetor.length; i++){
+         if (vetor[i] > maior) {   
+        maior = vetor[i];
+        
+             System.out.println("maior elemento encontrado é: " + maior      );
+        
+         }
+        }
+    }
+}
+
+exercicio 3:
+
+
+package reviaoex3;
+
+public class ReviaoEx3 {
+//exercicio3
+ 
+    public static void main(String[] args) {
+int [] vetor = {10,20,30,40};
+ int soma = vetor[0] + vetor[1] + vetor[2] + vetor [3];
+ double media = (double) soma /4;
+
+          System.out.println("A media dos vetores é: " + media);
+      }
+      
+    }
+
+exercicio 4:
+
+
+package revisaoex4;
+
+public class RevisaoEx4 {
+//exercicio4
+ 
+    public static void main(String[] args) {
+        
+        int [] vetorOriginal = {1,2,3,4,5};
+        int [] vetorCopia = new int [vetorOriginal.length];
+        for (int i = 0; i < vetorOriginal.length; i++)
+            vetorCopia[i] = vetorOriginal[i];
+        System.out.println("VetorCopia");
+        for (int elemento : vetorCopia) {
+            System.out.print(elemento + " ");
+            System.out.println();
+
+        }
+    }
+    
+}
+
+exercicio 5:
+
+
+package revisaoex5;
+
+public class RevisaoEX5 {
+
+    
+    public static void main(String[] args) {
+     
+        int [] vetor1 = {1,2,3,4,5};
+        int [] vetor2 = {1,2,3,4,5};
+        boolean saoIguais = true;
+        
+        if (vetor1.length != vetor2.length) {
+        saoIguais = false;
+        }else{
+            for (int i = 0; i <vetor1.length; i++) {
+             if (vetor1[i] != vetor2 [i])   {
+            saoIguais = false;
+            break;
+             }
+             if (saoIguais) {
+            System.out.println("Os vetores sao iguais.");
+                
+            }else{
+                System.out.println("Os vetores nao sao iguais");
+     
+                    }
+    }
+        } 
+    
+}
+}
+
+
+exercicio 6:
+
+
+package revisaoex6;
+
+import java.util.Arrays;
+
+public class RevisaoEX6 {
+   
+    public static void main(String[] args) {
+     int [] vetor = {1,2,3,4,5};
+        
+        System.out.println("vetor original :" + Arrays.toString(vetor));
+        int tamanho = vetor.length;
+        for (int i = 0; i <tamanho /2; i++){
+        int temp = vetor.length;    
+        vetor[i] = vetor[tamanho - 1 - 1];
+        vetor[tamanho - 1 - 1] = temp;
+        
+            System.out.println("vetor invertido " + Arrays.toString(vetor));
+        
+    }
+    
+}
+}
+
+exercicio 7:
+
+
+
+package revisaoex7;
+
+public class RevisaoEX7 {
+
+    public static void main(String[] args) {
+
+       int [] vetor = {1,2,3,4,5};
+       int pares = 0;
+       int impares = 0;
+       for (int num : vetor) {
+        if (num % 2 == 0) {
+         pares++;
+        }else{
+            impares++;
+            System.out.println("quantidade de elementos pares: " + pares);
+        System.out.println("quantidade de elementos impares: " + impares);
+        
+       }
+    }
+    }
+    
+}
+
+
+exercicio 8:
+
+package exercicio8;
+
+import java.util.Arrays;
+
+
+
+public class Exercicio8 {
+//exercicio8
+
+    public static void main(String[] args) {
+ 
+    int [] vetor = {1,2,3,4,5};
+    
+        int elementoParaRemover = 3;
+        System.out.println("vetor original :" + Arrays.toString(vetor));
+       
+        
+        System.out.println("vetor pos remocao:" + Arrays.toString(vetor));
+     
+        int indice = -1;
+        for (int i = 0; 1 < vetor.length; i++){
+        if (vetor[i] == elementoParaRemover) {
+        indice = i;
+        break;
+        }
+    }
+    
+}
+}
+
+
+
+exercicio 9:
+
+
+package revisaoex9;
+
+import java.util.Arrays;
+
+public class RevisaoEX9 {
+
+  
+    public static void main(String[] args) {
+       
+     int [] vetor = {3,2,5,4,1};
+     Arrays.sort(vetor);
+        System.out.println("vetor em ordem crescente: ");  
+      for (int num : vetor) {
+          System.out.print(num + " "); 
+        
+      }  
+    
+    }
+    
+}
+
+exercicio 10:
+
+Nao fiz!
